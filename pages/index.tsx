@@ -98,8 +98,8 @@ const Home: NextPage = () => {
         {
           imagesHoverEffect.map(item => {
             return (
-              <div style={{ marginBottom: '10px' }}>
-                <ImagesHover key={item.serail}
+              <div style={{ marginBottom: '10px' }} key={item.serail}>
+                <ImagesHover 
                   data={item}
                   onImageHover={showCurrentActiveImageZoom}
                   id={item.serail}
